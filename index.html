@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Editing Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Code Editing Demonstration</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <input type="number" id="num1" placeholder="Enter first number">
+                <input type="number" id="num2" placeholder="Enter second number">
+            </div>
+            
+            <div class="operation-buttons">
+                <button onclick="performOperation('add')" class="operation-btn">Add (+)</button>
+                <button onclick="performOperation('subtract')" class="operation-btn">Subtract (-)</button>
+                <button onclick="performOperation('multiply')" class="operation-btn">Multiply (×)</button>
+                <button onclick="performOperation('divide')" class="operation-btn">Divide (÷)</button>
+                <button onclick="performOperation('power')" class="operation-btn">Power (^)</button>
+            </div>
+            
+            <div id="result" class="result"></div>
+            
+            <div class="clear-section">
+                <button onclick="clearInputs()" class="clear-btn">Clear</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
